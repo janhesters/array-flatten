@@ -1,6 +1,6 @@
 import { describe } from 'riteway';
 
-import { flatten } from './index.js';
+import { flatten } from './flatten.js';
 
 describe('flatten', async assert => {
   assert({

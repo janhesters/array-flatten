@@ -1,9 +1,3 @@
-/**
- *
- * @param {Array} arr - Arbitrarily nested array.
- * @returns {Array} flattenedArr - A flat array.
- */
-const flatten = arr =>
-  arr.reduce((a, c) => a.concat(Array.isArray(c) ? flatten(c) : c), []);
-
-export { flatten };
+// eslint-disable-next-line no-global-assign
+require = require('esm')(module);
+module.exports = require('./flatten.js');
