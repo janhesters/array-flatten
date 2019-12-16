@@ -10,4 +10,4 @@ Prefix these commands with `yarn` (e.g. `yarn watch` for the watch script).
 - `"lint"` - runs linting on the code base.
 - `"test"` - runs the unit tests.
 - `"validate"` - lints, runs unit tests. Used for Husky commit validation and Travis CI PR validation.
-- `"watch"` - runs `"unit-tests"` and `"format"` anytime a file within `src/` changes.
+- `"watch"` - runs `"test"` and `"format"` anytime a file within `src/` changes.
