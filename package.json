@@ -1,0 +1,36 @@
+{
+  "author": "Jan Hesters",
+  "description": "Challenge for Job Hunt Questionaire",
+  "devDependencies": {
+    "eslint": "6.7.2",
+    "eslint-config-prettier": "6.7.0",
+    "eslint-plugin-prettier": "3.1.2",
+    "eslint-plugin-simple-import-sort": "5.0.0",
+    "esm": "3.2.25",
+    "husky": "3.1.0",
+    "prettier": "1.19.1",
+    "riteway": "6.1.1",
+    "tap-nirvana": "1.1.0",
+    "watch": "1.0.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn -s validate"
+    }
+  },
+  "keywords": [
+    "array",
+    "flatten"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "array-flatten",
+  "scripts": {
+    "format": "yarn --silent lint --fix && echo 'Lint complete.'",
+    "lint": "echo 'Linting...' && eslint --ignore-path .gitignore .",
+    "test": "riteway -r esm ./src/index.test.js",
+    "validate": "yarn -s test && yarn -s lint",
+    "watch": "watch 'clear && yarn -s test | tap-nirvana && yarn -s format' src"
+  },
+  "version": "1.0.0"
+}
